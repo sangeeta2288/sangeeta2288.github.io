@@ -82,7 +82,7 @@ function fetchQuotes() {
     newQuote.content = quote;
     $('#quote-content').html(quote);
     $('#tweet-button-id').html(
-        '<a target="_blank" href="https://twitter.com/share?related=twitterapi%2Ctwitter&hashtags=InspirationalQuote&text='+quote+'">Tweet</a>'
+        '<a target="_blank" href="https://twitter.com/share?hashtags=InspirationalQuote&text='+quote+'">Tweet</a>'
     );
 }
 // create quote component
@@ -111,7 +111,7 @@ class QuoteComponent extends React.Component{
             content: newQuote.content//quotes[randomNumberWithinListSize]
         });
         $('#tweet-button-id').html(
-        '<a target="_blank" href="https://twitter.com/share?related=twitterapi%2Ctwitter&hashtags=InspirationalQuote&text='+newQuote.content+'">Tweet</a>'
+        '<a target="_blank" href="https://twitter.com/share?hashtags=InspirationalQuote&text='+newQuote.content+'">Tweet</a>'
         );
     }
 

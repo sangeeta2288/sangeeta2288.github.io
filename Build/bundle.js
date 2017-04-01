@@ -19814,7 +19814,7 @@ function fetchQuotes() {
     var quote = quotes[randomNumberWithinListSize];
     newQuote.content = quote;
     (0, _jquery2.default)('#quote-content').html(quote);
-    (0, _jquery2.default)('#tweet-button-id').html('<a target="_blank" href="https://twitter.com/share?related=twitterapi%2Ctwitter&hashtags=InspirationalQuote&text=' + quote + '">Tweet</a>');
+    (0, _jquery2.default)('#tweet-button-id').html('<a target="_blank" href="https://twitter.com/share?hashtags=InspirationalQuote&text=' + quote + '">Tweet</a>');
 }
 // create quote component
 
@@ -19848,7 +19848,7 @@ var QuoteComponent = function (_React$Component) {
             this.setState({
                 content: newQuote.content //quotes[randomNumberWithinListSize]
             });
-            (0, _jquery2.default)('#tweet-button-id').html('<a target="_blank" href="https://twitter.com/share?related=twitterapi%2Ctwitter&hashtags=InspirationalQuote&text=' + newQuote.content + '">Tweet</a>');
+            (0, _jquery2.default)('#tweet-button-id').html('<a target="_blank" href="https://twitter.com/share?hashtags=InspirationalQuote&text=' + newQuote.content + '">Tweet</a>');
         }
     }, {
         key: 'render',
